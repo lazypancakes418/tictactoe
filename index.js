@@ -29,6 +29,7 @@ function getPlayers() {
         return
       }
       playertwo = text.PlayerTwo
+      startGame()
     })
   })
 }
@@ -42,3 +43,16 @@ const printBoard = () => {
   \n   ${board[6]}| ${board[7]} |${board[8]}`)
 }
 
+
+function startGame () {
+  console.log('Game started')
+  printBoard()
+  console.log('Its player One Turn, You have symbol X. Player Two has symbol O')
+  game()
+}
+
+function game = () {
+
+}
+
+getPlayers()
